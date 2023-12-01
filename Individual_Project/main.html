@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <section id="main">
+    <img id="IIUM_logo" src="IIUM_logo.png" style="width: 10%; height: auto;">
+    <header>
+      <h1>RM1 CAMPAIGN</h1>
+      <img id="program_image" src="program_image.jpg" style="width: 50%; height: auto;"">
+      <h2>Let your contribution be <span id="word">Perpetual</span> for the pleasure  of Allah swt </h2>
+      <p id="verse">"The example of those who spend their wealth in the way of ALLAH is like <br>
+         a seed[of grain] which grows seven spikes; in each spike is a hundred grains. <br>
+         And Allah multiples [His reward] for whom He wills. And Allah is all-Encompassing <br>
+         and Knowing". <br>
+         -Al Baqarah:261
+      </p>
+
+    </header>
+    </section>
+
+    <section id="form">
+      <form id="regular_form">
+        <fieldset>
+        <legend><h3>RM1 Campaign</h3></legend>
+        <p>Director <br> IIUM Endowment Fund <br> Level 3, Rectory Building <br>International Islamic University Malaysia</p>
+        <h4>PARTICIPATION IN RM1 CAMPAIGN-MONTHLY SALARY DEDUCTION</h4>
+
+        <label for="regular_name">Name:</label>
+        <input id="regular_name" type="text" name="name" required><br><br>
+        
+        <label for="regular_staffNo">Staff Number:</label>
+        <input id="regular_staffNo" type="text" name="staffNo" required><br><br>
+        
+        <label for="regular_K/C/D/I/O">K/C/D/I/O:</label>
+        <input id="regular_K/C/D/I/O" type="text" name="K/C/D/I/O" required><br><br>
+        
+        <label for="regular_contactNo">Contact Number:</label>
+        <input id="regular_contactNo" type="tel" name="contactNo" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required><br><br>
+        
+        <label for="regular_email">Email:</label>
+        <input id="regular_email" type="email" name="email" required><br><br>
+        
+        <label for="regular_Deducted">Amount to be Deducted:</label>
+        <input id="regular_Deducted" type="number" name="Deducted" required><br><br>
+
+        <p>The above salary will take effect from 
+
+        <label for="regular_from"></label>
+        <input id="regular_from" type="date" name="from" required>
+
+        until
+
+        <label for="regular_until"></label>
+        <input id="regular_until" type="date" name="until" required>
+
+        or further notice. <br><br><br><br></p>
+        
+        <canvas id="regular_signatureCanvas" width="200" height="200"></canvas><br>
+        <input type="hidden" id="regular_signature" name="signature" required>
+        <script src="https://cdn.jsdelivr.net/npm/signature_pad"></script>
+        
+        
+        <label for="regular_sign">Signature</label><br>
+        <input id="regular_sign" type="text" name="sign" required>
+        <button id="regular_clearButton">Clear</button><br>
+        <script src="script.js"></script>
+        
+        <label for="regular_date">Date</label><br>
+        <input id="regular_date" type="date" name="date" required><br><br>
+
+      
+      
+        <input type="submit" value="Submit Donation">
+      </fieldset>
+      </form>
+      
+      <form id="kulliyah_form">
+        <fieldset>
+        <legend><h3>RM1 Campaign-Kulliyah Based</h3></legend>
+        <p>Director <br> IIUM Endowment Fund <br> Level 3, Rectory Building <br>International Islamic University Malaysia</p>
+        <h4>PARTICIPATION IN RM1 CAMPAIGN-MONTHLY SALARY DEDUCTION</h4>
+
+        <label for="kulliyah_name">Name:</label>
+        <input id="kulliyah_name" type="text" name="name" required><br><br>
+        
+        <label for="kulliyah_staffNo">Staff Number:</label>
+        <input id="kulliyah_staffNo" type="text" name="staffNo" required><br><br>
+        
+        <label for="kulliyah_K/C/D/I/O">K/C/D/I/O:</label>
+        <input id="kulliyah_K/C/D/I/O" type="text" name="K/C/D/I/O" required><br><br>
+        
+        <label for="kulliyah_contactNo">Contact Number:</label>
+        <input id="kulliyah_contactNo" type="tel" name="contactNo" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required><br><br>
+        
+        <label for="kulliyah_email">Email:</label>
+        <input id="kulliyah_email" type="email" name="email" required><br><br>
+        
+        <label for="kulliyah_Deducted">Amount to be Deducted:</label>
+        <input id="kulliyah_Deducted" type="number" name="Deducted" required><br><br>
+
+        <p>The above salary will take effect from 
+
+        <label for="kulliyah_from"></label>
+        <input id="kulliyah_from" type="date" name="from" required>
+
+        until
+
+        <label for="kulliyah_until"></label>
+        <input id="kulliyah_until" type="date" name="until" required>
+
+        or further notice. <br><br></p>
+
+        <p>For Kulliyah of 
+
+        <label for="kulliyah_kulliyah"></label>
+        <input id="kulliyah_kulliyah" type="text" name="kulliyah" required>
+        </p>
+        
+        <canvas id="kulliyah_signatureCanvas" width="200" height="200"></canvas><br>
+        <input type="hidden" id="kulliyah_signature" name="signature" required>
+        <script src="https://cdn.jsdelivr.net/npm/signature_pad"></script>
+        
+        
+        <label for="kulliyah_sign">Signature</label><br>
+        <input id="kulliyah_sign" type="text" name="sign" required>
+        <button id="kulliyah_clearButton">Clear</button><br>
+        <script src="script.js"></script>
+        
+        <label for="kulliyah_date">Date</label><br>
+        <input id="kulliyah_date" type="date" name="date" required><br><br>
+
+        <input type="submit" value="Submit Donation">
+      </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <p>IIUM ENDOWMENT FUND <br> Level3, Rectory <br>International Islamic University Malaysia <br>P.O Bx 10 <br>50728 Kuala Lumpur <br>Tel: 03 6196 4268 <br>Email: ief@iium.edu.my <br>Website: <a href="https://www.iium.edu.my/">www.iium.edu.my</a> <br>Facebook: <a href="https://www.facebook.com/ief.official">www.facebook.com/ief.official</a> </p>
+
+    </footer>
+  </div>
+</body>
+</html>

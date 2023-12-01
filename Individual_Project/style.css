@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(233, 226, 226);
+    margin: 2em auto;
+    text-align: center;
+    font: 0.9em;
+}
+
+#main{
+    grid-area: main;
+}
+
+.container{
+    padding: 50px;
+    border-radius: 50px;
+    background-image: url(donation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "main main"
+    "form form"
+    "footer footer"
+    ;
+    grid-template-columns: 1fr 1fr;
+}
+
+#form{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-gap: 20px;
+    grid-area: form;
+    grid-template-columns: 1fr 1fr;
+}
+
+#kulliyah_signatureCanvas{
+    border-bottom: 1px solid black;
+    
+}
+footer{
+    background-color: rgb(202, 226, 226, 0.8);
+    margin-top: 50px;
+    border: 1px solid black;
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-area: footer;
+}
+
+#program_image{
+    border-radius: 50px;
+}
+
+fieldset{
+    background-color: rgb(202, 226, 226, 0.8);
+}
+#regular_signatureCanvas{
+    border-bottom: 1px solid black;
+}
+
+#word{
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(63, 54, 54);
+    font-size: larger;
+}
+
+#verse{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(202, 226, 226, 0.8);
+    font-size: 20px;
+    border: 1px solid black;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* md */
+@media (max-width: 768px) {
+    .container{
+        grid-template-areas: 
+        "main"
+        "form"
+        "footer"
+        ;
+        grid-template-columns: 1fr;
+    }
+
+    #form{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-area: form;
+    }
+}
+
+@media (max-width: 320px){
+    .container{
+        grid-template-areas: 
+        "main"
+        "form"
+        "footer"
+        ;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #form{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-area: form;
+    }
+}
+
