@@ -23,9 +23,9 @@ Notes:
 
 
 reference : 
-https://github.com/szimek/signature_pad   -Signature pad repository
-https://stackoverflow.com/questions/41431322/how-to-convert-formdata-html5-object-to-json   -How to convert Formdata to json file
-https://stackoverflow.com/questions/26158468/create-json-file-using-blob   -Used it to create downloadable file (temp)
-https://stackoverflow.com/questions/10673122/how-to-save-canvas-as-an-image-with-canvas-todataurl   -save image (base64 url)
-https://www.youtube.com/watch?v=8dWL3wF_OMw 
+1. https://github.com/szimek/signature_pad   -Signature pad repository
+2. https://stackoverflow.com/questions/41431322/how-to-convert-formdata-html5-object-to-json   -How to convert Formdata to json file
+3. https://stackoverflow.com/questions/26158468/create-json-file-using-blob   -Used it to create downloadable file (temp)
+4. https://stackoverflow.com/questions/10673122/how-to-save-canvas-as-an-image-with-canvas-todataurl   -save image (base64 url)
+5. https://www.youtube.com/watch?v=8dWL3wF_OMw -Basic Javascript
 
